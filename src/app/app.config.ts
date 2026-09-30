@@ -39,6 +39,7 @@ export const appConfig: ApplicationConfig = {
       userDataBasePath: '/profile',
       changePasswordBasePath: '/profile/change-password',
       changeEmailBasePath: '/profile/change-email',
+      softwareDataUrl: '/assets/data/software.json',
       backPath: '/notes',
       redirectUrlAfterLogin: '/notes',
     }),

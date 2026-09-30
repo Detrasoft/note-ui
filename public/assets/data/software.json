@@ -1,0 +1,141 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": [
+        { "language": "pt-BR", "value": "DutFy Notes" },
+        { "language": "en", "value": "DutFy Notes" }
+      ],
+      "functions": [
+        {
+          "id": 1,
+          "name": [
+            { "language": "pt-BR", "value": "Anotações" },
+            { "language": "en", "value": "Notes" }
+          ],
+          "order": 1,
+          "subFunctions": [],
+          "type": "P",
+          "root": true,
+          "url": null,
+          "command": null,
+          "icon": "fa-solid fa-note-sticky",
+          "permissions": [
+            {
+              "id": 1,
+              "name": [
+                { "language": "pt-BR", "value": "Consultar notas" },
+                { "language": "en", "value": "View notes" }
+              ],
+              "internalCode": "NOT1C"
+            },
+            {
+              "id": 2,
+              "name": [
+                { "language": "pt-BR", "value": "Criar e editar notas" },
+                { "language": "en", "value": "Create and edit notes" }
+              ],
+              "internalCode": "NOT1G"
+            },
+            {
+              "id": 3,
+              "name": [
+                { "language": "pt-BR", "value": "Excluir notas" },
+                { "language": "en", "value": "Delete notes" }
+              ],
+              "internalCode": "NOT1E"
+            },
+            {
+              "id": 4,
+              "name": [
+                { "language": "pt-BR", "value": "Compartilhar notas" },
+                { "language": "en", "value": "Share notes" }
+              ],
+              "internalCode": "NOT1S"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": [
+            { "language": "pt-BR", "value": "Cadernos & Pastas" },
+            { "language": "en", "value": "Notebooks & Folders" }
+          ],
+          "order": 2,
+          "subFunctions": [],
+          "type": "P",
+          "root": true,
+          "url": null,
+          "command": null,
+          "icon": "fa-solid fa-book-bookmark",
+          "permissions": [
+            {
+              "id": 5,
+              "name": [
+                { "language": "pt-BR", "value": "Consultar cadernos" },
+                { "language": "en", "value": "View notebooks" }
+              ],
+              "internalCode": "NBK1C"
+            },
+            {
+              "id": 6,
+              "name": [
+                { "language": "pt-BR", "value": "Criar e editar cadernos" },
+                { "language": "en", "value": "Create and edit notebooks" }
+              ],
+              "internalCode": "NBK1G"
+            },
+            {
+              "id": 7,
+              "name": [
+                { "language": "pt-BR", "value": "Excluir cadernos" },
+                { "language": "en", "value": "Delete notebooks" }
+              ],
+              "internalCode": "NBK1E"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "name": [
+            { "language": "pt-BR", "value": "Administração & Acessos" },
+            { "language": "en", "value": "Administration & Access" }
+          ],
+          "order": 3,
+          "subFunctions": [],
+          "type": "P",
+          "root": true,
+          "url": null,
+          "command": null,
+          "icon": "fa-solid fa-shield-halved",
+          "permissions": [
+            {
+              "id": 8,
+              "name": [
+                { "language": "pt-BR", "value": "Gerenciar participantes e usuários" },
+                { "language": "en", "value": "Manage users and members" }
+              ],
+              "internalCode": "USR1M"
+            },
+            {
+              "id": 9,
+              "name": [
+                { "language": "pt-BR", "value": "Gerenciar perfis de acesso" },
+                { "language": "en", "value": "Manage access profiles" }
+              ],
+              "internalCode": "PRF1M"
+            },
+            {
+              "id": 10,
+              "name": [
+                { "language": "pt-BR", "value": "Configurações gerais do workspace" },
+                { "language": "en", "value": "General workspace settings" }
+              ],
+              "internalCode": "CFG1G"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
