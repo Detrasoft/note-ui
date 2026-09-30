@@ -1,4 +1,4 @@
-<div class="note-app-shell">
+<div *ngIf="!isLoginPage()" class="note-app-shell">
   <header class="note-navbar">
     <div class="brand">
       <i class="fa-solid fa-note-sticky logo-icon"></i>
@@ -28,9 +28,22 @@
     </nav>
 
     <div class="navbar-actions">
-      <a routerLink="/profile" class="profile-btn" title="Meu Perfil">
-        <i class="fa-solid fa-user-circle"></i>
-      </a>
+      <ng-container *ngIf="auth.isAuthenticated(); else unauthenticatedTpl">
+        <span class="user-greeting" *ngIf="auth.currentUser() as user">
+          {{ user.fullName || user.email }}
+        </span>
+        <a routerLink="/profile" class="profile-btn" title="Meu Perfil">
+          <i class="fa-solid fa-user-circle"></i>
+        </a>
+        <button class="logout-btn" (click)="logout()" title="Sair da conta">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+      </ng-container>
+      <ng-template #unauthenticatedTpl>
+        <a routerLink="/login" class="login-nav-btn">
+          <i class="fa-solid fa-right-to-bracket"></i> Entrar
+        </a>
+      </ng-template>
     </div>
   </header>
 
@@ -38,3 +51,6 @@
     <router-outlet></router-outlet>
   </main>
 </div>
+
+<!-- Full-screen login display -->
+<router-outlet *ngIf="isLoginPage()"></router-outlet>

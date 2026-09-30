@@ -2,6 +2,12 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
+    path: 'login',
+    loadComponent: () =>
+      import('@detrasoft.com/web-auth').then((m) => m.LoginComponent),
+    data: { title: 'Entrar - DutFy Notes' },
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'notes',
