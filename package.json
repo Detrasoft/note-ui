@@ -26,7 +26,7 @@
     "@detrasoft.com/billing": "0.2.0",
     "@detrasoft.com/storage": "0.1.0",
     "@detrasoft.com/doc-signing": "0.1.0",
-    "@detrasoft.com/support": "0.1.0",
+    "@detrasoft.com/support": "0.2.0",
     "@detrasoft.com/mob-auth": "0.1.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
