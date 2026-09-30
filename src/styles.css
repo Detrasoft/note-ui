@@ -34,6 +34,22 @@
   --dwa-radius-md: 12px;
   --dwa-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 
+  /* Mapeamento de tokens da lib @detrasoft.com/billing para o tema escuro do DutFy Notes */
+  --dbl-surface: #131926;
+  --dbl-surface-sunken: #0B0F17;
+  --dbl-surface-raised: #1E2738;
+  --dbl-border: #1E293B;
+  --dbl-text: #F8FAFC;
+  --dbl-text-muted: #94A3B8;
+  --dbl-text-soft: #64748B;
+  --dbl-primary: #3B82F6;
+  --dbl-primary-strong: #60A5FA;
+  --dbl-primary-soft: rgba(59, 130, 246, 0.14);
+  --dbl-brand-gradient: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  --dbl-radius-lg: 16px;
+  --dbl-radius-md: 12px;
+  --dbl-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
   /* Tokens do detra-ng para compatibilidade dos inputs ds-input no DutFy Notes */
   --input-label: #F8FAFC;
   --input-text: #F8FAFC;

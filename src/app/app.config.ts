@@ -49,6 +49,11 @@ export const appConfig: ApplicationConfig = {
       software: 'note',
       countersBaseUrl: environment.apiURLGateway,
       countersPath: '/note-api',
+      theme: 'dark',
+      brandColor: '#3B82F6',
+      brandGradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+      cardRadius: '16px',
+      buttonPill: false,
     }),
     provideStorage({
       baseUrl: environment.apiURLStorage,
