@@ -19,7 +19,29 @@
   --note-border: #1E293B;
   --note-text: #F8FAFC;
   --note-text-muted: #94A3B8;
-  --note-radius: 12px;
+  --note-radius: 16px;
+
+  /* Mapeamento de tokens da lib @detrasoft.com/web-auth para o tema escuro do DutFy Notes */
+  --dwa-surface: #131926;
+  --dwa-surface-sunken: #0B0F17;
+  --dwa-border: #1E293B;
+  --dwa-text: #F8FAFC;
+  --dwa-text-muted: #94A3B8;
+  --dwa-primary: #3B82F6;
+  --dwa-primary-strong: #60A5FA;
+  --dwa-primary-soft: rgba(59, 130, 246, 0.14);
+  --dwa-radius-lg: 16px;
+  --dwa-radius-md: 12px;
+  --dwa-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  /* Tokens do detra-ng para compatibilidade dos inputs ds-input no DutFy Notes */
+  --input-label: #F8FAFC;
+  --input-text: #F8FAFC;
+  --input-bg: #0B0F17;
+  --input-border: #1E293B;
+  --input-border-hover: #3B82F6;
+  --input-border-focus: #3B82F6;
+  --input-placeholder: #64748B;
 }
 
 html, body {
