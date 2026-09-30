@@ -22,7 +22,7 @@
     "@angular/router": "^18.2.0",
     "@capacitor/core": "^8.4.2",
     "@detrasoft.com/detra-ng": "^0.6.25",
-    "@detrasoft.com/web-auth": "0.1.0",
+    "@detrasoft.com/web-auth": "0.2.0",
     "@detrasoft.com/billing": "0.1.0",
     "@detrasoft.com/storage": "0.1.0",
     "@detrasoft.com/doc-signing": "0.1.0",
