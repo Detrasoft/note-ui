@@ -26,6 +26,12 @@ export const appConfig: ApplicationConfig = {
       appName: 'DutFy Notes',
       appSubtitle: 'Suas ideias com zero atrito',
       appIcon: 'fa-solid fa-note-sticky',
+      theme: 'dark',
+      background: '#0B0F17',
+      showAurora: true,
+      cardRadius: '20px',
+      buttonPill: false,
+      showThemeToggle: false,
       redirectUrlAfterLogin: '/notes',
     }),
     provideBilling({

@@ -1,5 +1,5 @@
-<div *ngIf="!isLoginPage()" class="note-app-shell">
-  <header class="note-navbar">
+<div class="note-app-shell" [class.is-auth-page]="isLoginPage()">
+  <header *ngIf="!isLoginPage()" class="note-navbar">
     <div class="brand">
       <i class="fa-solid fa-note-sticky logo-icon"></i>
       <span class="brand-name">DutFy Notes</span>
@@ -47,10 +47,7 @@
     </div>
   </header>
 
-  <main class="note-main-content">
+  <main class="note-main-content" [class.is-auth-main]="isLoginPage()">
     <router-outlet></router-outlet>
   </main>
 </div>
-
-<!-- Full-screen login display -->
-<router-outlet *ngIf="isLoginPage()"></router-outlet>

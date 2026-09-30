@@ -23,7 +23,12 @@ export class AppComponent {
   );
 
   readonly currentUrl = toSignal(this.currentUrl$, { initialValue: this.router.url });
-  readonly isLoginPage = computed(() => this.currentUrl()?.startsWith('/login') ?? false);
+  readonly isLoginPage = computed(() => {
+    const url = this.currentUrl();
+    if (url && url.startsWith('/login')) return true;
+    if (typeof window !== 'undefined' && window.location.pathname.startsWith('/login')) return true;
+    return false;
+  });
 
   logout() {
     this.auth.logout('/login');
