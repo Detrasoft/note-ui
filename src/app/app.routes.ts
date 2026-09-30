@@ -17,8 +17,7 @@ export const routes: Routes = [
   {
     path: 'notes',
     canActivate: [authGuard],
-    loadComponent: () =>
-      import('./features/notes/notes-dashboard.component').then(m => m.NotesDashboardComponent),
+    loadChildren: () => import('@detrasoft.com/note').then(m => m.NOTE_ROUTES),
   },
   {
     path: 'profile',

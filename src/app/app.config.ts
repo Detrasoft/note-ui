@@ -10,6 +10,7 @@ import { provideBilling } from '@detrasoft.com/billing';
 import { provideStorage } from '@detrasoft.com/storage';
 import { provideDocSigning } from '@detrasoft.com/doc-signing';
 import { provideSupport } from '@detrasoft.com/support';
+import { provideNote } from '@detrasoft.com/note';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -72,6 +73,16 @@ export const appConfig: ApplicationConfig = {
       buttonPill: false,
       basePath: '/support',
       backPath: '/notes',
+    }),
+    provideNote({
+      baseUrl: environment.apiURLGateway,
+      apiPath: '/note-api',
+      theme: 'dark',
+      brandColor: '#3B82F6',
+      brandGradient: 'linear-gradient(135deg, #3B82F6 0%, #2563EB 100%)',
+      cardRadius: '16px',
+      buttonPill: false,
+      basePath: '/notes',
     }),
   ],
 };

@@ -14,7 +14,7 @@ if [ -d "$DETRA_NG_DIR/dist/detra-ng" ]; then
   echo "✔ detra-ng"
 fi
 
-for pkg in web-auth billing storage doc-signing support mob-auth; do
+for pkg in web-auth billing storage doc-signing support mob-auth note; do
   if [ -d "$LIBS_DIR/$pkg/dist" ]; then
     rm -rf "$DEST_DIR/$pkg"
     cp -r "$LIBS_DIR/$pkg/dist" "$DEST_DIR/$pkg"

@@ -72,6 +72,23 @@
   --dsp-radius-md: 12px;
   --dsp-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 
+  /* Mapeamento de tokens da lib @detrasoft.com/note para o tema escuro do DutFy Notes */
+  --dn-surface: #131926;
+  --dn-surface-hover: #1E2738;
+  --dn-border: #1E293B;
+  --dn-text: #F8FAFC;
+  --dn-text-muted: #94A3B8;
+  --dn-text-soft: #64748B;
+  --dn-primary: #3B82F6;
+  --dn-primary-hover: #2563EB;
+  --dn-brand-gradient: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+  --dn-radius: 16px;
+  --dn-radius-btn: 12px;
+  --dn-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --dn-menu-bg: #131926;
+  --dn-menu-border: #1E293B;
+  --dn-menu-text: #F8FAFC;
+
   /* Tokens do detra-ng para compatibilidade dos inputs ds-input no DutFy Notes */
   --input-label: #F8FAFC;
   --input-text: #F8FAFC;
