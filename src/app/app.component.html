@@ -1,0 +1,40 @@
+<div class="note-app-shell">
+  <header class="note-navbar">
+    <div class="brand">
+      <i class="fa-solid fa-note-sticky logo-icon"></i>
+      <span class="brand-name">DutFy Notes</span>
+      <span class="badge">PRO</span>
+    </div>
+
+    <nav class="nav-links">
+      <a routerLink="/notes" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+        <i class="fa-solid fa-book-open"></i> Anotações
+      </a>
+      <a routerLink="/users" routerLinkActive="active">
+        <i class="fa-solid fa-users"></i> Usuários
+      </a>
+      <a routerLink="/access-profiles" routerLinkActive="active">
+        <i class="fa-solid fa-shield-halved"></i> Perfis
+      </a>
+      <a routerLink="/billing" routerLinkActive="active">
+        <i class="fa-solid fa-credit-card"></i> Planos & Faturamento
+      </a>
+      <a routerLink="/support" routerLinkActive="active">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+      <a routerLink="/legal" routerLinkActive="active">
+        <i class="fa-solid fa-file-contract"></i> Termos & Privacidade
+      </a>
+    </nav>
+
+    <div class="navbar-actions">
+      <a routerLink="/profile" class="profile-btn" title="Meu Perfil">
+        <i class="fa-solid fa-user-circle"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="note-main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

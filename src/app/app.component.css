@@ -1,0 +1,95 @@
+.note-app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--note-bg, #0B0F17);
+  color: var(--note-text, #F8FAFC);
+}
+
+.note-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  background: rgba(19, 25, 38, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--note-border, #1E293B);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-icon {
+  font-size: 1.4rem;
+  color: #3B82F6;
+}
+
+.badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+  color: white;
+  padding: 0.15rem 0.45rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94A3B8;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #F8FAFC;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-links a.active {
+  color: #3B82F6;
+  background: rgba(59, 130, 246, 0.12);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.profile-btn {
+  font-size: 1.5rem;
+  color: #94A3B8;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.profile-btn:hover {
+  color: #3B82F6;
+}
+
+.note-main-content {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}

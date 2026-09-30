@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "https://dev.detrasoft.com:5555",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "headers": { "X-Forwarded-Proto": "https" }
+  }
+}

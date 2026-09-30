@@ -1,0 +1,37 @@
+/* ============================================
+   DUTFY NOTE — Global Styles & Design Tokens
+   ============================================ */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import '@angular/cdk/overlay-prebuilt.css';
+
+/* ── Detrasoft detra-ng Design System, Reset & Global Styles ── */
+@import '@detrasoft.com/detra-ng/base/reset.css';
+@import '@detrasoft.com/detra-ng/base/global.css';
+
+:root {
+  --note-primary: #3B82F6;
+  --note-primary-hover: #2563EB;
+  --note-accent: #8B5CF6;
+  --note-bg: #0B0F17;
+  --note-surface: #131926;
+  --note-surface-hover: #1E2738;
+  --note-border: #1E293B;
+  --note-text: #F8FAFC;
+  --note-text-muted: #94A3B8;
+  --note-radius: 12px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--note-bg, #0B0F17);
+  color: var(--note-text, #F8FAFC);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
