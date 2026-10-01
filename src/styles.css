@@ -97,6 +97,17 @@
   --input-border-hover: #3B82F6;
   --input-border-focus: #3B82F6;
   --input-placeholder: #64748B;
+
+  /* Tokens do detra-ng e do editor Markdown para DutFy Notes */
+  --theme-text-body: #F8FAFC;
+  --theme-text-heading: #F8FAFC;
+  --theme-text-muted: #94A3B8;
+  --theme-text-soft: #64748B;
+  --color-surface-raised: #131926;
+  --color-glass-border: #1E293B;
+  --surface-border-strong: #1E293B;
+  --color-primary-500: #3B82F6;
+  --color-primary-400: #2563EB;
 }
 
 html, body {
@@ -111,4 +122,25 @@ html, body {
 
 * {
   box-sizing: border-box;
+}
+
+/* Alto contraste garantido para a área de escrita do editor Markdown */
+.editor-area,
+.editor-area * {
+  color: #F8FAFC !important;
+}
+
+.editor-area code {
+  color: #3B82F6 !important;
+  background-color: #0B0F17 !important;
+  border: 1px solid #1E293B !important;
+}
+
+.editor-area a {
+  color: #3B82F6 !important;
+}
+
+.editor-area blockquote {
+  color: #94A3B8 !important;
+  border-left-color: #3B82F6 !important;
 }
